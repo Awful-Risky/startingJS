@@ -75,7 +75,15 @@ function phonePrompt () {
 	}
 }
 
+function birthPrompt () {
+	var number = prompt("Please enter a birthdate using the xx/xx/xxxx format", "Enter Birth Data Here");
 
-
+	if (number.charAt(2) === '/' && number.charAt(5) === '/' && number.length == 10) {
+		alert('The birth date you entered apears valid.');
+	}
+	else {
+		alert('The birth date you entered apears invalid.');
+	}
+}
 
 
