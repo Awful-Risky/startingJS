@@ -63,3 +63,19 @@ for(var i = 0; i <= 3; i+=1) {
 		console.log(i);
 	}
 }
+
+function phonePrompt () {
+	var number = prompt("Please enter a valid phone number using dashes", "Enter Phone Number Here");
+
+	if (number.charAt(3) === '-' && number.charAt(7) === '-') {
+		alert('The phone number you entered apears valid.');
+	}
+	else {
+		alert('The phone number you entered apears invalid.');
+	}
+}
+
+
+
+
+
