@@ -2,8 +2,28 @@ function namePrompt () {
 	var name = prompt("Please enter your name", "Enter Name Here");
 
 	if (name != null) {
-		document.getElementById("demo").innerHTML =
-		"Hello " + name + "! how you doin?";
+		document.getElementById("repeat").innerHTML =
+		"You entered " + name + "!";
+	}
+	if (name != null) {
+		document.getElementById("length").innerHTML =
+		name + " is " + name.length + " characters in length";
+	}
+	if (name != null) {
+		document.getElementById("charN").innerHTML =
+		"The third character in " + name + " is " + name.charAt(2);
+	}
+	if (name != null) {
+		document.getElementById("lower").innerHTML =
+		name + " in all lower case is " + name.toLowerCase() + "!";
+	}
+	if (name != null) {
+		document.getElementById("upper").innerHTML =
+		name + " in all lower case is " + name.toUpperCase() + "!";
+	}
+	if (name != null) {
+		document.getElementById("subString").innerHTML =
+		"The subword from 2nd to 4th character is " + name.substring(1, 4) + "!";
 	}
 }
 
