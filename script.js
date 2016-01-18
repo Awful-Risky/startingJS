@@ -25,11 +25,21 @@ for(var i = 0; i <= 10; i+=2) {
 }
 
 for(var i = 1; i < 4; i++) {
-	console.log(i);
-	console.log(i);
-	console.log(i);
+	for(var j = 1; j < 4; j++) {
+		console.log(i);
+	}
 }
 
 for(var i = 3; i <= 15; i+=3) {
 	console.log(i);
+}
+
+for(var i = 10; i >= 0; i-=1) {
+	console.log(i);
+}
+
+for(var i = 0; i <= 3; i+=1) {
+	for(var j = 1; j < 4; j++) {
+		console.log(i);
+	}
 }
