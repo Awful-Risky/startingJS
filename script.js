@@ -97,17 +97,40 @@ function reportVictimPrompt () {
 		var victimName = prompt("Please enter the name for victim " + i, "Enter Name Here");
 		vicitmNameList.push(victimName)
 		
-		// var victimPhone = prompt("Please enter the phone number for victim " + i, "Enter Number Here");
-		// vicitmPhoneList.push(victimPhone)
+		var victimPhone = prompt("Please enter the phone number for victim " + i, "Enter Number Here");
+		vicitmPhoneList.push(victimPhone)
 		
-		// var victimStreet = prompt("Please enter the name for victim " + i, "Enter Name Here");
-		// vicitmStreetList.push(victimStreet)
-		
-		console.log(vicitmNameList)
-		// console.log(vicitmPhoneList)
-		// console.log(vicitmStreetList)
+		var victimStreet = prompt("Please enter the Street for victim " + i, "Enter Name Here");
+		vicitmStreetList.push(victimStreet)
 	}
-
-	// name.length = objectSize
+	console.log(vicitmNameList)
+	console.log(vicitmPhoneList)
+	console.log(vicitmStreetList)
 }
+
+
+var volunteerNameList = []
+var volunteerPhoneList = []
+var volunteerStreetList = []
+function reportVolunteerPrompt () {
+	var numberVolunteers = prompt("How many disaster volunteers do you wish to report?", "Enter number here");
+	for (var i = 1; i <= numberVolunteers; i+= 1) {
+		
+		var volunteerName = prompt("Please enter the name for volunteer " + i, "Enter Name Here");
+		volunteerNameList.push(volunteerName)
+		
+		var volunteerPhone = prompt("Please enter the phone number for volunteer " + i, "Enter Number Here");
+		volunteerPhoneList.push(volunteerPhone)
+		
+		var volunteerStreet = prompt("Please enter the Street for volunteer " + i, "Enter Street Here");
+		volunteerStreetList.push(volunteerStreet)
+	}
+	console.log(volunteerNameList)
+	console.log(volunteerPhoneList)
+	console.log(volunteerStreetList)
+}
+
+
+
+
 
