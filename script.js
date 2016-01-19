@@ -86,6 +86,7 @@ function birthPrompt () {
 	}
 }
 
+var alertArray = []
 
 var victimNameList = []
 var victimPhoneList = []
@@ -103,14 +104,15 @@ function reportVictimPrompt () {
 		var victimStreet = prompt("Please enter the Street for victim " + i, "Enter Name Here");
 		victimStreetList.push(victimStreet)
 	}
-	var victimObject = [
+	var victimArray = [
 		{victimNames: victimNameList},
 		{victimPhones: victimPhoneList},
 		{victimStreets: victimStreetList}
 	]
 	
-	console.log(victimObject)
-	return victimObject
+	
+	alertArray.push(victimArray)
+	return victimArray
 }
 
 
@@ -130,16 +132,27 @@ function reportVolunteerPrompt () {
 		var volunteerStreet = prompt("Please enter the Street for volunteer " + i, "Enter Street Here");
 		volunteerStreetList.push(volunteerStreet)
 	}	
-	var volunteerObject = [
+	var volunteerArray = [
 		{volunteerNames: volunteerNameList},
 		{volunteerPhones: volunteerPhoneList},
 		{volunteerStreets: volunteerStreetList}
 	]
 	
-	console.log(volunteerObject)
-	return volunteerObject
+	alertArray.push(volunteerArray);
+	return volunteerArray;
 }
 
+
+function summaryPrompt () {
+	console.log(alertArray)
+	if (alertArray.length == 2) {
+
+		alert(alertArray.join("\n"));
+	}
+	else {
+		alert('Summary is not ready yet...insert both victms and volunteers');
+	}
+}
 
 
 
