@@ -87,3 +87,27 @@ function birthPrompt () {
 }
 
 
+var vicitmNameList = []
+var vicitmPhoneList = []
+var vicitmStreetList = []
+function reportVictimPrompt () {
+	var numberVictims = prompt("How many disaster victims do you wish to report?", "Enter number here");
+	for (var i = 1; i <= numberVictims; i+= 1) {
+		
+		var victimName = prompt("Please enter the name for victim " + i, "Enter Name Here");
+		vicitmNameList.push(victimName)
+		
+		// var victimPhone = prompt("Please enter the phone number for victim " + i, "Enter Number Here");
+		// vicitmPhoneList.push(victimPhone)
+		
+		// var victimStreet = prompt("Please enter the name for victim " + i, "Enter Name Here");
+		// vicitmStreetList.push(victimStreet)
+		
+		console.log(vicitmNameList)
+		// console.log(vicitmPhoneList)
+		// console.log(vicitmStreetList)
+	}
+
+	// name.length = objectSize
+}
+
