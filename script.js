@@ -204,6 +204,45 @@
 // console.log(testToArray)
 
 
+// function startsWithA (singleString) {
+// 	var string2Array = singleString.split('')
+// 	if (string2Array[0] == 'a') {
+// 		return true
+// 	}
+// 	else {
+// 		return false
+// 	}
+// }
+
+// testStartsWithA = startsWithA('fapple')
+// console.log(testStartsWithA)
+
+// function excite (singleString) {
+// 	var concate = singleString + "!!!"
+// 	return concate
+// }
+
+// testExcite = excite('string')
+// console.log(testExcite)
+
+function sun (singleString) {
+	if (singleString.indexOf('sun') !=  -1) {
+		return true;
+	}
+	else {
+		return false;
+	}
+}
+
+testSun = sun('sunbird')
+console.log(testSun)
+
+
+
+
+
+
+
 
 
 
